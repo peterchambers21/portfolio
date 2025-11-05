@@ -1,0 +1,23 @@
+[
+  {
+    "slug": "weathernow",
+    "title": "WeatherNow",
+    "description": "A minimalist weather app using the Open-Meteo API with geolocation and offline caching.",
+    "tags": ["web", "api"],
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "demo": "https://example.com/weather",
+    "repo": "https://github.com/yourname/weathernow",
+    "date": "2025-05",
+    "image": ""
+  },
+  {
+    "slug": "taskforge",
+    "title": "TaskForge",
+    "description": "Kanban board with drag-and-drop, localStorage sync, and keyboard shortcuts.",
+    "tags": ["productivity"],
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "demo": "https://example.com/taskforge",
+    "repo": "https://github.com/yourname/taskforge",
+    "date": "2025-03"
+  }
+]

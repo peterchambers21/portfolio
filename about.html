@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Your Name</title>
+  <meta name="description" content="About Your Name — developer portfolio." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="nav">
+      <div class="brand"><span class="logo"></span><a class="brand-link" href="index.html">Your Name</a></div>
+      <div class="actions">
+        <a class="btn" href="about.html">About</a>
+        <a class="btn" href="contact.html">Contact</a>
+        <a class="btn" href="https://www.linkedin.com/in/your-link" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <h1>About me</h1>
+      <p class="muted">Front-end focused developer who loves TypeScript, accessibility, and delightful micro-interactions.</p>
+    </header>
+
+    <main class="grid">
+      <section class="card" style="grid-column: span 12">
+        <div class="content">
+          <h2 class="title">Hello, I’m Your Name 👋</h2>
+          <p class="desc">
+            I build fast, accessible web apps with HTML, CSS, and JavaScript/TypeScript.
+            I enjoy component design, DX tooling, and turning ideas into polished UI.
+          </p>
+          <p class="desc">
+            Currently exploring performance budgets, a11y testing, and micro-animation systems.
+            In my spare time I tinker with small utilities and OSS.
+          </p>
+        </div>
+      </section>
+
+      <section class="card" style="grid-column: span 12">
+        <div class="content">
+          <h2 class="title">Skills</h2>
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Accessibility (WCAG)</span>
+            <span class="tag">Performance</span>
+            <span class="tag">Git/GitHub</span>
+            <span class="tag">REST/JSON</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" style="grid-column: span 12">
+        <div class="content">
+          <h2 class="title">Experience</h2>
+          <ul class="timeline">
+            <li>
+              <strong>Front-end Developer</strong> — Company Name (2023–Present)<br>
+              <span class="muted">Built and maintained feature-rich SPA components; shipped performance improvements that cut LCP by 35%.</span>
+            </li>
+            <li>
+              <strong>Web Developer</strong> — Other Company (2021–2023)<br>
+              <span class="muted">Implemented design system tokens and automated visual regression checks.</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="card" style="grid-column: span 12">
+        <div class="content">
+          <h2 class="title">Education</h2>
+          <p class="desc"><strong>B.S. in Something</strong> — University (Year)</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>© <span id="year"></span> Your Name</footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

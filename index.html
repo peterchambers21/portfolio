@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Projects by Your Name." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="nav">
+      <div class="brand"><span class="logo"></span><span>Your Name</span></div>
+      <div class="actions">
+        <a class="btn" href="https://www.linkedin.com/in/your-link" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+        <a class="btn" href="about.html">About</a>
+        <a class="btn" href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <h1>Hey, I build web things.</h1>
+      <p class="muted">Front-end focused developer who loves TypeScript, accessibility, and delightful micro-interactions.</p>
+      <div class="toolbar">
+        <input id="search" class="search" type="search" placeholder="Search projects…">
+        <span class="count"><span id="count">0</span> projects</span>
+      </div>
+    </header>
+
+    <main>
+      <section id="projects" class="grid" aria-live="polite"></section>
+    </main>
+
+    <footer>© <span id="year"></span> Your Name</footer>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>

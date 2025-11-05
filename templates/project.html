@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{{title}} — Project</title>
+  <meta name="description" content="{{description}}" />
+  <link rel="stylesheet" href="../../styles.css" />
+
+  <!-- Canonical & social -->
+  <link rel="canonical" href="{{canonical}}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{title}}" />
+  <meta property="og:description" content="{{description}}" />
+  <meta property="og:image" content="{{image}}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{title}}" />
+  <meta name="twitter:description" content="{{description}}" />
+  <meta name="twitter:image" content="{{image}}" />
+
+  <!-- JSON-LD (Project) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"CreativeWork",
+    "name":"{{title}}",
+    "description":"{{description}}",
+    "url":"{{canonical}}",
+    "dateCreated":"{{date}}",
+    "keywords":"{{keywords}}"
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <nav class="nav">
+        <div class="brand"><span class="logo"></span><a href="../../index.html">Your Name</a></div>
+        <div class="actions"><a class="btn" href="../../index.html">← All projects</a></div>
+        <a class="btn" href="about.html">About</a>
+        <a class="btn" href="contact.html">Contact</a>
+    </nav>
+
+    <main style="margin-top:24px">
+      <article class="card" style="display:block">
+        <img class="thumb" src="{{image}}" alt="{{title}} preview" />
+        <div class="content">
+          <h1 class="title">{{title}}</h1>
+          <p class="desc">{{description}}</p>
+          <div class="tags">{{tagsHtml}}</div>
+          <div class="actions" style="margin-top:12px">{{linksHtml}}</div>
+        </div>
+      </article>
+    </main>
+
+    <footer>© <span id="year"></span> Your Name</footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
