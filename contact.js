@@ -24,7 +24,7 @@ function validate(data){
 }
 
 function toMailto({name, email, subject, message, sendCopy}){
-  const to = "your.email@example.com"; // CHANGE ME
+  const to = "chamberspeter1@outlook.com";
   const subj = subject ? subject : `New message from ${name}`;
   const bodyLines = [
     `Name: ${name}`,
